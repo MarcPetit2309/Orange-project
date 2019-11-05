@@ -59,8 +59,28 @@ html {
     margin: 0 auto;
   }
   
-  h3 {}
+  h3 {
+    color: #031D5B;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: left;
+    margin: 0px 20px 15px 20px;
+  }
+
+  .contenido h3 {
+      border-bottom: 5px solid #F8765E;
+      padding-bottom: 20px;
+      margin-right: 255px;
+  }
   
+  .contenido p {
+    color: #5B6C94;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: left;
+    margin: 20px 20px 0px 20px;
+  }
+
   .intro-text {
     color: #ffffff;
     font-size: 16px;
@@ -163,4 +183,20 @@ header nav ul {
     height: 231px;
     margin-bottom: 30px;
     margin-left: 25px;
+  }
+
+  .contenido {
+    width: 335px;
+    height: 1570px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 34px 0 #d2d2d280;
+    position: relative;
+    top: -64px;
+  }
+
+  .contenido img {
+      margin-top: 60px;
+      margin-bottom: 55px;
   }
