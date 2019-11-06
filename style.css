@@ -28,15 +28,26 @@ html {
   }
 
   a {
-    color: white;
+    color: var(--second-color);
     text-decoration: none;
   }
   
   
+  /* ---- variables ---- */
+
+  html {
+      --main-color: #F8765E;
+      --button-color: #9BDBE7;
+      --title-color: #031D5B;
+      --text-color: #5B6C94;
+      --second-color: white;
+  }
+  
+
   /* ---- typography ---- */
   
   body {
-    color: white;
+    color: var(--second-color);
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 147%;
@@ -57,17 +68,40 @@ html {
     line-height: 40px;
     margin: 0 auto;
   }
+
+  h2.titulos {
+    color: var(--main-color);
+    margin-top: 60px;
+}
+
+.cartas h2 {
+    color: var(--main-color);
+    font-size: 16px;
+    line-height: 40px;
+    text-align: left;
+    margin-right: 200px;
+    margin-left: 40px;
+    position: absolute;
+    top: 22px;
+    z-index: 10;
+}
   
   h3 {
-    color: #031D5B;
+    color: var(--title-color);
     font-size: 18px;
     line-height: 25px;
     text-align: left;
     margin: 0px 20px 15px 20px;
   }
 
+  .contenido h3 {
+    border-bottom: 5px solid var(--main-color);
+    padding-bottom: 20px;
+    margin-right: 255px;
+}
+
   h4 {
-    color: #031D5B;
+    color: var(--title-color);
     font-size: 26px;
     line-height: 45px;
     font-weight: 500;
@@ -75,100 +109,65 @@ html {
     margin-bottom: 30px;
   }
 
-  .contenido h3 {
-      border-bottom: 5px solid #F8765E;
-      padding-bottom: 20px;
-      margin-right: 255px;
-  }
+  h4.titulos {
+    color: #CDCDCD;
+    font-size: 26px;
+    margin-bottom: 40px;
+}
   
   p {
-    color: #5B6C94;
+    color: var(--text-color);
     font-size: 16px;
     line-height: 32px;
     text-align: center;
   }
+
   .contenido p {
     text-align: left;
     margin: 20px 20px 0px 20px;
   }
 
-  .intro-text {
-    color: white;
+  .cartas p {
+    color: var(--second-color);
+    text-align: left;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 36px;
+    margin: 103px 10px 78px 50px;
+}
+
+.premium p {
+    margin: 30px;
+    font-weight: 500;
+}
+
+.footer p {
+    color: var(--second-color);
     font-size: 16px;
+    font-weight: bold;
     line-height: 32px;
+}
+
+  .intro-text {
+    color: var(--second-color);
     font-weight: 900;
 }
   
-  h2.titulos {
-      color: #F8765E;
-      margin-top: 60px;
-  }
-
-  h4.titulos {
-      color: #CDCDCD;
-      font-size: 26px;
-      font-weight: 500;
-      line-height: 45px;
-      margin-bottom: 40px;
-  }
-
-  .premium p {
-      margin: 30px;
-      font-weight: 500;
-  }
-
-  .cartas h2 {
-      color: #F8765E;
-      font-size: 16px;
-      line-height: 40px;
-      text-align: left;
-      margin-right: 204px;
-      margin-left: 40px;
-      position: absolute;
-      top: 22px;
-      z-index: 10;
-  }
-
-  .cartas p {
-      color: white;
-      text-align: left;
-      font-size: 18px;
-      font-weight: 500;
-      line-height: 36px;
-      margin: 103px 10px 78px 50px;
-  }
-
-  #place {
+  .autor.place {
       opacity: 80%;
       margin-left: -10px;
       display: inline;
   }
 
-  #autor {
+  .autor {
       display: inline;
   }
   
 
   /* ---- layout ---- */
   
-  #site-header {
-    padding: 30px 0;
-    color: white;
-    background: #111;
-  }
-  
-  #site-footer {
-    color: white;
-    padding: 60px 0;
-    background: #111;
-  }
-  
-  #site-main {
-    margin-bottom: 60px;
-  }
-  
   .container {
-    background-color: #F8765E;
+    background-color: var(--main-color);
     padding-bottom: 140px;
 }
   
@@ -183,12 +182,12 @@ html {
    button {
     width: 170px;
     height: 60px;
-    background-color: #9BDBE7;
-    border: 0px #9BDBE7;
+    background-color: var(--button-color);
+    border: 0px var(--button-color);
     border-radius: 20px;
     display: block;
     margin: 0 auto;
-    color: white;
+    color: var(--second-color);
     font-size: 20px;
     font-weight: bold;
     box-shadow: 2px 2px 8px 0 #00000024;
@@ -197,7 +196,7 @@ html {
   form input {
       width: 335px;
       height: 60px;
-      border: 0px white;
+      border: 0px var(--second-color);
       border-radius: 20px;
       margin: 0 0 20px 0px;
       color: #cdcdcd;
@@ -215,7 +214,7 @@ html {
   /* ---- section ---- */
   
   header {
-    background-color: #F8765E;
+    background-color: var(--main-color);
     padding-top: 25px;
     padding-bottom: 60px;
   }
@@ -239,7 +238,7 @@ html {
     width: 335px;
     height: 1570px;
     margin: 0 auto;
-    background-color: white;
+    background-color: var(--second-color);
     border-radius: 20px;
     box-shadow: 0 10px 34px 0 #d2d2d280;
     position: relative;
@@ -267,7 +266,7 @@ html {
 .premium div {
     height: 296px;
     width: 296px;
-    background-color: #F8765E;
+    background-color: var(--main-color);
     margin: 40px auto;
     border-radius: 200px;
     position: relative;
@@ -291,18 +290,18 @@ html {
 	height: 660px;
 	width: 300px;
 	border-radius: 20px 0 0 20px;
-    background-color: #F8765E;
+    background-color: var(--main-color);
     position: absolute;
     left: 75px;
     top: 111px;
     z-index: 0;
 }
 
-.comentario-azul {
+.comentario-1 {
 	height: 400px;
 	width: 300px;
 	border-radius: 20px;
-	background-color: #9BDBE7;
+	background-color: var(--button-color);
     box-shadow: 12px 12px 40px 0 rgba(0,0,0,0.2);
     position: relative;
     top: 72px;
@@ -310,18 +309,18 @@ html {
     z-index: 10;
 }
 
-.comentario-azul img {
+.comentario-1 img {
     height: 40px;
     position: relative;
     top: 80px;
     left: 50px;
 }
 
-.comentario-blanco {
+.comentario-2 {
     height: 400px;
     width: 300px;
     border-radius: 20px;
-    background-color: white;
+    background-color: var(--second-color);
     box-shadow: 12px 12px 40px 0 rgba(0,0,0,0.2);
     position: relative;
     top: -328px;
@@ -334,16 +333,9 @@ html {
 }
 
 .footer {
-    background-color: #F8765E;
+    background-color: var(--main-color);
     padding-top: 30px;
     padding-bottom: 40px;
-}
-
-.footer p {
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 32px;
 }
 
 .footer ul {
