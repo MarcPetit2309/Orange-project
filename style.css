@@ -216,8 +216,8 @@ html {
   
   header {
     background-color: var(--main-color);
-    padding-top: 6.5%;
-    padding-bottom: 16%;
+    padding-top: 26px;
+    padding-bottom: 10%;
   }
 
   header nav ul {
@@ -226,66 +226,80 @@ html {
   }
 
   .intro {
-    margin: 8%;
+    padding: 8%;
+
   }
 
   .container img {
     margin-bottom: 8%;
     margin-left: 6.5%;
     max-width: 90%;
-    width: 87%;
+  }
+
+  @media (min-width: 768px) {
+      .container img {
+
+      }
   }
 
   .contenido {
     width: 335px;
-    height: 1570px;
     margin: 0 auto;
     background-color: var(--second-color);
     border-radius: 20px;
     box-shadow: 0 10px 34px 0 #d2d2d280;
     position: relative;
-    top: -16%;
+    top: -100px;
   }
+
+  @media (min-width: 768px) {
+    .contenido {
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+        justify-content: space-around;
+    }
+}
 
   .contenido img {
       margin-top: 16%;
-      margin-bottom: 14%;
   }
-
-  .contenido ul {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
+  
+  .contenido p {
+      padding-bottom: 15%;
   }
 
   .premium {
       position: relative;
       margin-bottom: 26%;
-  }
+      top: 100%;
+    }
 
   .premium img {
-      max-width: 47%;
-      width: 46%;
+      max-width: 100%;
       margin: -5% auto;
-      position: absolute;
+      padding: 0 25%;
+      position: relative;
       z-index: 10;
   }
 
 .premium div {
     height: 296px;
     width: 296px;
-    max-width:%;
     background-color: var(--main-color);
     margin-top: 20%;
-    border-radius: 52%;
-    position: relative;
-    z-index: 0;
+    border-radius: 50%;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
 }
-
-@media (min-width: 296px) {
+@media (min-width: 600px) {
     .premium div {
-        width: 77%;
-        max-width: 77%;
+        width: 500px;
+        height: 500px;
+        margin-top: 9%;
     }
 }
 
@@ -362,22 +376,38 @@ html {
     font-size: 16px;
     font-weight: bold;
     line-height: 32px;
-    margin: 0 20px;
+    margin: 0 5%;
     display: flex;
+    justify-content: space-around;
 }
 
 .footer li {
-    flex: auto;
+    margin: auto;
 }
 
 nav ul {
     font-size: 16px;
     font-weight: bold;
     line-height: 32px;
-    margin: 0 50px;
+    margin: 0 13%;
+    margin-left: 50%;
     display: flex;
+    justify-content: space-around;
 }
 
-nav li {
-    flex: auto;
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    header {
+        flex-direction: row;
+    }
+    h1 {
+        border: 0;
+        align-content: flex-start;
+    }
 }
