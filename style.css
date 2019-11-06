@@ -67,11 +67,12 @@ html {
     font-size: 30px;
     line-height: 40px;
     margin: 0 auto;
+
   }
 
   h2.titulos {
     color: var(--main-color);
-    margin-top: 60px;
+    margin-top: 16%;
 }
 
 .cartas h2 {
@@ -79,10 +80,10 @@ html {
     font-size: 16px;
     line-height: 40px;
     text-align: left;
-    margin-right: 200px;
-    margin-left: 40px;
+    margin-right: 53%;
+    margin-left: 10%;
     position: absolute;
-    top: 22px;
+    top: 2%;
     z-index: 10;
 }
   
@@ -91,13 +92,13 @@ html {
     font-size: 18px;
     line-height: 25px;
     text-align: left;
-    margin: 0px 20px 15px 20px;
+    margin: 0 5% 4% 5%;
   }
 
   .contenido h3 {
     border-bottom: 5px solid var(--main-color);
-    padding-bottom: 20px;
-    margin-right: 255px;
+    padding-bottom: 5%;
+    margin-right: 77%;
 }
 
   h4 {
@@ -105,14 +106,14 @@ html {
     font-size: 26px;
     line-height: 45px;
     font-weight: 500;
-    margin-top: 10px;
-    margin-bottom: 30px;
+    margin-top: 2.6%;
+    margin-bottom: 7.8%;
   }
 
   h4.titulos {
     color: #CDCDCD;
     font-size: 26px;
-    margin-bottom: 40px;
+    margin-bottom: 10%;
 }
   
   p {
@@ -124,7 +125,7 @@ html {
 
   .contenido p {
     text-align: left;
-    margin: 20px 20px 0px 20px;
+    margin: 5% 5% 0 5%;
   }
 
   .cartas p {
@@ -133,11 +134,11 @@ html {
     font-size: 18px;
     font-weight: 500;
     line-height: 36px;
-    margin: 103px 10px 78px 50px;
+    margin: 27% 2.6% 20% 13%;
 }
 
 .premium p {
-    margin: 30px;
+    margin: 8%;
     font-weight: 500;
 }
 
@@ -155,7 +156,7 @@ html {
   
   .autor.place {
       opacity: 80%;
-      margin-left: -10px;
+      margin-left: -2.6%;
       display: inline;
   }
 
@@ -168,12 +169,12 @@ html {
   
   .container {
     background-color: var(--main-color);
-    padding-bottom: 140px;
+    padding-bottom: 36%;
 }
   
   .section {
-    margin-bottom: 20px;
-    padding-top: 20px;
+    margin-bottom: 5%;
+    padding-top: 5%;
   }
   
 
@@ -215,23 +216,24 @@ html {
   
   header {
     background-color: var(--main-color);
-    padding-top: 25px;
-    padding-bottom: 60px;
+    padding-top: 6.5%;
+    padding-bottom: 16%;
   }
 
   header nav ul {
     font-weight: bold;
-    margin: 0;
+    margin: 0%;
   }
 
   .intro {
-    margin: 30px;
+    margin: 8%;
   }
 
   .container img {
-    height: 231px;
-    margin-bottom: 30px;
-    margin-left: 25px;
+    margin-bottom: 8%;
+    margin-left: 6.5%;
+    max-width: 90%;
+    width: 87%;
   }
 
   .contenido {
@@ -242,23 +244,29 @@ html {
     border-radius: 20px;
     box-shadow: 0 10px 34px 0 #d2d2d280;
     position: relative;
-    top: -64px;
+    top: -16%;
   }
 
   .contenido img {
-      margin-top: 60px;
-      margin-bottom: 55px;
+      margin-top: 16%;
+      margin-bottom: 14%;
+  }
+
+  .contenido ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
   }
 
   .premium {
       position: relative;
-      margin-bottom: 100px;
+      margin-bottom: 26%;
   }
 
   .premium img {
-      height: 360px;
-      top: -45px;
-      left: 90px;
+      max-width: 47%;
+      width: 46%;
+      margin: -5% auto;
       position: absolute;
       z-index: 10;
   }
@@ -266,22 +274,34 @@ html {
 .premium div {
     height: 296px;
     width: 296px;
+    max-width:%;
     background-color: var(--main-color);
-    margin: 40px auto;
-    border-radius: 200px;
+    margin-top: 20%;
+    border-radius: 52%;
     position: relative;
     z-index: 0;
+}
+
+@media (min-width: 296px) {
+    .premium div {
+        width: 77%;
+        max-width: 77%;
+    }
 }
 
 .cartas {
     text-align: left;
     position: relative;
-    margin-bottom: -130px;
+    margin-bottom: -34%;
+}
+
+.cartas ul {
+    overflow: scroll;
 }
 
 .comillas1 {
-    height: 165px;
-    margin-left: 30px;
+    height: 50%;
+    margin-left: 8%;
     position: relative;
     z-index: 5;
 }
@@ -292,7 +312,7 @@ html {
 	border-radius: 20px 0 0 20px;
     background-color: var(--main-color);
     position: absolute;
-    left: 75px;
+    left: 20%;
     top: 111px;
     z-index: 0;
 }
@@ -310,10 +330,10 @@ html {
 }
 
 .comentario-1 img {
-    height: 40px;
+    height: 11%;
     position: relative;
     top: 80px;
-    left: 50px;
+    left: 13%;
 }
 
 .comentario-2 {
