@@ -232,13 +232,12 @@ html {
 
   .container img {
     margin-bottom: 8%;
+    margin-left: 6.5%;
     max-width: 90%;
   }
 
-  .container {
-
-  }
   @media (min-width: 768px) {
+<<<<<<< HEAD
       .container {
         display: flex;
         justify-content: space-between;
@@ -267,6 +266,10 @@ html {
       }
       h2.intro {
         padding: 0%;
+=======
+      .container img {
+
+>>>>>>> parent of 90dc794... final commit
       }
   }
 
@@ -406,11 +409,11 @@ html {
     line-height: 32px;
     margin: 0 5%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .footer li {
-    margin: 0 1%;
+    margin: auto;
 }
 
 nav ul {
@@ -433,17 +436,23 @@ header {
 @media (min-width: 768px) {
     header {
         flex-direction: row;
+<<<<<<< HEAD
         padding-bottom: 5%;
         justify-content: space-between;
+=======
+>>>>>>> parent of 90dc794... final commit
     }
     h1 {
-        margin: 0 0 0 7%;
+        border: 0;
         align-content: flex-start;
     }
+<<<<<<< HEAD
     nav {
         margin: 0 10% 0 0%;
     }
     nav li {
         margin: 0 10%;
     }
+=======
+>>>>>>> parent of 90dc794... final commit
 }
