@@ -232,13 +232,43 @@ html {
 
   .container img {
     margin-bottom: 8%;
-    margin-left: 6.5%;
     max-width: 90%;
   }
 
-  @media (min-width: 768px) {
-      .container img {
+  .container {
 
+  }
+  @media (min-width: 768px) {
+      .container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding-bottom: 10%;
+      }
+      div img {
+          width: 100%;
+          margin-right: 7%;
+      }
+      div.introduccion {
+          width: 40%;
+          text-align: left;
+          margin-left: 7%;
+          justify-content: center;
+      }
+      div form {
+          display: flex;
+          justify-content: left;
+          flex-direction: row;
+      }
+      p.intro {
+        padding: 0%;
+        text-align: left;
+      }
+      h2.intro {
+        padding: 0%;
+        font-size: 300%;
+        line-height: 120%;
       }
   }
 
@@ -378,11 +408,11 @@ html {
     line-height: 32px;
     margin: 0 5%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .footer li {
-    margin: auto;
+    margin: 0 1%;
 }
 
 nav ul {
@@ -405,9 +435,18 @@ header {
 @media (min-width: 768px) {
     header {
         flex-direction: row;
+        padding-bottom: 5%;
+        justify-content: space-between;
+        align-items: center;
     }
     h1 {
-        border: 0;
+        margin: 0 0 0 7%;
         align-content: flex-start;
+    }
+    nav {
+        margin: 0 9% 0 0%;
+    }
+    nav li {
+        margin: 0 10%;
     }
 }
