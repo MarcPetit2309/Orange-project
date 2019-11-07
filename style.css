@@ -73,9 +73,6 @@ html {
   h2.titulos {
     color: var(--main-color);
 }
-  h2.intro {
-      padding-bottom: 3%;
-  }
 
 .cartas h2 {
     color: var(--main-color);
