@@ -152,6 +152,10 @@ html {
   .intro-text {
     color: var(--second-color);
     font-weight: 900;
+<<<<<<< HEAD
+=======
+    margin-top: 5%;
+>>>>>>> parent of dd03a3e... final commit 3
 }
   
   .autor.place {
