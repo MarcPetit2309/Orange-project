@@ -281,8 +281,8 @@ html {
 
   .premium img {
       max-width: 100%;
-      margin: -5% auto;
-      padding: 5% 25%;
+      margin: 0 auto;
+      padding: 0 25%;
       position: relative;
       z-index: 10;
   }
