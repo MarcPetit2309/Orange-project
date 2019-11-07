@@ -152,6 +152,7 @@ html {
   .intro-text {
     color: var(--second-color);
     font-weight: 900;
+    margin-top: 5%;
 }
   
   .autor.place {
