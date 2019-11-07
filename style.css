@@ -236,7 +236,7 @@ html {
   }
 
   .container img {
-    margin-bottom: 8%;
+    margin-bottom: 0;
     max-width: 90%;
   }
 
